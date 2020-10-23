@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel = "stylesheet" href="/CSS/Login.css">
+        <title> EPILEPSUM </title>
+        
+        <link rel="icon " href="/img/Logo-epilepsum.ico">
+        </head>
+
+        <body>
+            
+            <div class="contenedor-form">
+                <div class="toggle">
+                    <span><a href="/Login">Crear Cuenta</a></span>
+                </div>
+
+<!-- Aquí comienza el segundo formulario -->
+                <div class="formulario">
+                    <h2>Crea tu Cuenta</h2>
+                    <form action="/Registro" method="POST">
+                        <input id="nombretxt"   type="text"     name="nombre" placeholder="Nombre"  class="form-control form-control-lg" required>   
+                        <input id="edadtxt"     type="text"     name="edad"     placeholder="Edad" class="form-control form-control-lg" required>
+                        <input id="pastxt"      type="password" name="password" placeholder="Contraseña" class="form-control form-control-lg"  required> 
+                        <input id="emailtxt"    type="email"    name="username" placeholder="Correo Eletrónico" class="form-control form-control-lg"  required>
+                        <input id="telefonotxt" type="tel"      name="telefono" placeholder="Teléfono" class="form-control form-control-lg"   required>  
+                                
+                        <button id="boton-login" type="submit" class="btn btn-primary" style="background-color: crimson;">Guardar</button><br>  <br>
+                                
+                        <h4>Detalles guardados:</h4>
+                        Nombre almacenado:
+                        <label type="text" id="nombre"></label><br>                          
+                        edad almacenado:
+                        <label "text" id="edad"></label><br>
+                        Contraseña almacenado:
+                        <label "text" id="passM"></label><br>
+                        Email almacenado:
+                        <label type="text" id="emailM"></label><br>
+                        Telefono almacenado:
+                        <label type="text" id="telefonoM"></label><br>
+                        <button id="boton-login" class="btn btn-primary" style="background-color: crimson;">
+                            Cargar 
+                        </button> <br>
+				    </form>					
+                </div>
+<!-- Aquí termina el segundo formulario -->
+
+            <div class="reset-password">
+                <a href="#">Olvidé mi Contraseña</a>
+            </div>
+
+        </div>
+
+        <script src="/js/Login.js"></script>
+    </body>
+</html>
+

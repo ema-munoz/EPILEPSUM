@@ -1,4 +1,4 @@
-/*
+
 $(".toggle").click(function () {
     $(".formulario").animate({
         height:"toggle",
@@ -7,7 +7,7 @@ $(".toggle").click(function () {
         opacity : "toggle"
     }, "slow");
 });
-*/
+
 
 function validar2(){
     /*Obtener datos almacenados*/

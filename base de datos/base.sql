@@ -7,8 +7,8 @@ use Epilepsum;
         nombre      varchar (50) not null,
         telefono    int (10) not null,
         edad        int (2) not null,
-        correo      varchar (50) not null,
-        contrasena  varchar (50) not null
+        username    varchar (50) not null,
+        password  varchar (50) not null
     );
 
     alter table Usuario MODIFY id int (11) not null auto_increment, auto_increment = 1;

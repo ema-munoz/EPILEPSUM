@@ -16,11 +16,11 @@ body{
 }
 
 .contenedor-form .img{
-    width: 100px;
-    margin: 60px;
-    border-radius: 50%;
+    max-width: 150px;
+    margin: 135px;
+    border-radius: 50px;
     position: absolute;
-    top: -50% ;
+    top: -65% ;
     left: calc (50% - 50px);
 }
 
