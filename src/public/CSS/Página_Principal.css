@@ -45,6 +45,11 @@ body{
     filter: grayscale(50%);
 }
 
+.card-img-top {
+    max-height: 25vh;
+
+}
+
 #logo {
     max-height: 50vh;
     max-width: 75px;
