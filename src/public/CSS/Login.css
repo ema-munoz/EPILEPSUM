@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0cm;
+    padding: 0%;
+    background: url(../img/Fondo.jpg) repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.h1{
+    max-width: 150px;
+    margin: 135px;
+    text-align: left; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor-form .img{
+    max-width: 150px;
+    margin: 135px;
+    border-radius: 50px;
+    position: absolute;
+    top: -65% ;
+    left: calc (50% - 50px);
+}
+
+.contenedor-form {
+    background:rgba(27, 144, 240, 0.781);
+    max-width: 500px;
+    width: 75%;
+    margin: 200px auto;
+    border-radius: 5px;
+    color:  black;
+    position: relative;
+    /*padding: 40px*/
+}
+
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+    border-top: 2px solid rgb(220, 20, 170);
+    border-bottom: 2px solid rgb(220, 20, 170);
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="username"],
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"],
+.contenedor-form input[type="tel"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background:whitesmoke;
+    color:  black;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid coral;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="username"]:focus,
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus,
+.contenedor-form input[type="tel"]:focus {
+    border-bottom: 4px solid  rgb(220, 20, 170);;
+}
+
+.contenedor-form input[type="submit"] {
+    background: rgb(220, 20, 170);
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background:coral;
+}
+
+.contenedor-form .reset-password {
+    background: rgb(220, 20, 170);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contenedor-form .reset-password a {
+    color:  whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.contenedor-form .formulario {
+    display: none;
+    padding: 40px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}

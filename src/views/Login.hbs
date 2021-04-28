@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+<!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel = "stylesheet" href="css/Login.css">
+        <title> EPILEPSUM </title>
+        <link rel="icon " href="img/Logo-epilepsum.ico">
+    </head>
+
+    <body>
+        <div class="contenedor-form">
+            <div class="toggle">
+                <span style="text-align:center ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;"> Crear Cuenta</span>
+            </div>
+
+<!-- Aquí comienza el primer formulario -->
+            <div class="formulario">
+                <img src="img/Logo_epilepsum.png" alt="Logo" id="img" class="img">
+                <h1 style="text-align:center ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;">EPILEPSUM</h1><br>
+                <form>
+                    <input id="nombreIntxt" type="userName" placeholder="Usuario" required      style="text-align: left; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    <input id="passIntxt" type="password" placeholder="Contraseña" required     style="text-align: left; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    
+                    <button id="boton-login" class="btn btn-primary" style="background-color: rgb(220, 20, 170);; text-align: center; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">Ingresar</button><br>  <br>
+                </form>
+            </div>
+<!-- Aquí termina el primer formulario -->
+
+<!-- Aquí comienza el segundo formulario -->
+            <div class="formulario">
+                <h1 style="text-align:center ; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">Crea tu Cuenta</h1>
+                <form action="#">
+                    <input style="text-align:left ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;" id="nombretxt"   type="text"     placeholder="Nombre"            class="form-control form-control-lg"    required>   
+                    <input style="text-align:left ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;" id="apellidotxt" type="text"     placeholder="Apellido"          class="form-control form-control-lg"    required>
+                    <input style="text-align:left ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;" id="pastxt"      type="password" placeholder="Contraseña"        class="form-control form-control-lg"    required> 
+                    <input style="text-align:left ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;" id="emailtxt"    type="email"    placeholder="Correo Eletrónico" class="form-control form-control-lg"    required>
+                    <input style="text-align:left ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;" id="telefonotxt" type="tel"      placeholder="Teléfono"          class="form-control form-control-lg"    required>  
+                    <button id="boton-login" class="btn btn-primary" style="background-color:  rgb(220, 20, 170); text-align: center; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">Guardar</button><br>  <br>
+			    </form>
+            </div>
+<!-- Aquí termina el segundo formulario -->
+
+            <div class="reset-password">
+                <a href="#" style="text-align:center ; font-style: italic ; font-family: Georgia, 'Times New Roman', Times, serif;" >Olvidé mi Contraseña</a>
+            </div>
+        </div>
+        <script src="js/Login.js"></script>
+    </body>
+</html>
+
