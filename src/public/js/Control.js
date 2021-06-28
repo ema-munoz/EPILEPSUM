@@ -111,6 +111,7 @@ function startTime() {
     document.getElementById("clock").innerHTML = hr + " : " + min + " : " + sec + " " + ap;
     var time = setTimeout(function(){ startTime() }, 500);
 }
+
 function checkTime(i) {
     if (i < 10) {
         i = "0" + i;
