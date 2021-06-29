@@ -1,7 +1,7 @@
 
 body{
     background: rgba(74, 251, 251, 0.609);
-    background: url(../img/Fondo.jpg) repeat center top;
+    background: url(/img/Fondo.jpg) repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;

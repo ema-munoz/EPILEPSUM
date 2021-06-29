@@ -117,13 +117,10 @@ footer a {
   margin: 0 auto;
   margin-top: 30px;
 }
-
-
 /* Aquí termina el Calendario*/
 
 
 /* Aquí empieza el Reloj*/
-
 #clock {
   background-color: #333;
   font-family: sans-serif;
@@ -169,7 +166,6 @@ footer a {
 
 
 /* Aquí empieza el Formulario*/
-
 .login-box {
   width: 500px;
   height: 250px;
@@ -233,5 +229,4 @@ footer a {
 .login-box input a:hover {
   color: white;
 }
-
 /* Aquí termina el Formulario*/

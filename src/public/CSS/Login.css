@@ -9,10 +9,18 @@
 body{
     margin: 0cm;
     padding: 0%;
-    background: url(../img/Fondo.jpg) repeat center top;
+    background: url(/img/Fondo.jpg) repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
+}
+
+.h1{
+    max-width: 150px;
+    margin: 135px;
+    text-align: left; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .contenedor-form .img{
@@ -25,7 +33,7 @@ body{
 }
 
 .contenedor-form {
-    background:rgba(27, 240, 187, 0.781);
+    background:rgba(27, 144, 240, 0.781);
     max-width: 500px;
     width: 75%;
     margin: 200px auto;

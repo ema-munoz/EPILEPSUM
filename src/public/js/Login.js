@@ -27,7 +27,6 @@ else
 }
 }
 
-
 /*Funcion inicia login*/
 $(document).ready(function(){    
 $('#boton-login').click(function(){                       
@@ -48,8 +47,6 @@ else
 }
 });   
 });
-
-
 
 /*Funcion de Capturar, Almacenar datos y Limpiar campos*/
 $(document).ready(function(){    
@@ -74,8 +71,6 @@ $(document).ready(function(){
         document.getElementById("apellidotxt").value = "";
     });   
 });
-    
-
 
 /*Funcion Cargar y Mostrar datos*/
 $(document).ready(function(){    
