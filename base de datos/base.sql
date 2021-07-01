@@ -16,7 +16,7 @@ create table Usuarios
 alter table Usuarios MODIFY id int
 (11) not null auto_increment, auto_increment = 1;
 
-create table medico
+create table medicos
 (
     id int (11) primary key not null,
     nombre varchar (50) not null,
