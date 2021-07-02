@@ -3,6 +3,7 @@ const usuarioModelo = require('./Modelos/user')
 const medicacionUsuario = require('./Modelos/medicacion')
 const ataques = require('./Modelos/ataquesEpilepticos')
 const medicos = require('./Modelos/medico')
+const contactosEmergencia = require('./Modelos/contactosEmergencia')
 
 
 const sequelize = new Sequelize(
@@ -38,11 +39,15 @@ sequelize.authenticate()
   const medicacion = medicacionUsuario(sequelize, Sequelize)
   const ataque = ataques(sequelize, Sequelize)
   const medico = medicos(sequelize, Sequelize)
+  const contactosDeEmergencia = contactosEmergencia(sequelize, Sequelize)
 
 
   module.exports = {
     usuario,
     medicacion,
     ataque,
-    medico
+    medico,
+    contactosDeEmergencia
   }
+
+  
