@@ -7,7 +7,7 @@ const ataquesEpilepticos = (sequelize, type)=>{
         },
         dias: type.STRING,
         hora: type.STRING,
-        duracion: type.STRING,
+        duracion: type.STRING
     })
 }
 
