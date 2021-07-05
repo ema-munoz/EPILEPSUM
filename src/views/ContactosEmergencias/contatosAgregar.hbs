@@ -1,4 +1,6 @@
-<form action="/contactos/agregar" method="post">
+
+
+<form action="/contactos/agregar/{{user.id}}" method="POST">
     <div>
         <label>
             Nombre:
@@ -7,7 +9,7 @@
     </div>
     <div>
         <label>
-        Familliar:
+        Familiar:
         </label>
         <input type="text" name="familiar" id="familiar" checked>
     </div>

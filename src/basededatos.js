@@ -41,6 +41,17 @@ sequelize.authenticate()
   const medico = medicos(sequelize, Sequelize)
   const contactosDeEmergencia = contactosEmergencia(sequelize, Sequelize)
 
+  usuario.hasMany(contactosDeEmergencia)
+  contactosDeEmergencia.belongsTo(usuario)
+
+  usuario.hasMany(medicacion)
+  medicacion.belongsTo(usuario)
+
+  usuario.hasMany(ataque)
+  ataque.belongsTo(usuario)
+
+  usuario.hasMany(medico)
+  medico.belongsTo(usuario)
 
   module.exports = {
     usuario,
@@ -50,4 +61,4 @@ sequelize.authenticate()
     contactosDeEmergencia
   }
 
-  
+    
