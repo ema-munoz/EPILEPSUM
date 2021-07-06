@@ -177,15 +177,28 @@
             <div class="modal-dialog" id="popup">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <p class="card-text"> Contacto Médico:
-                            <br> Dr. Fernando Bozano.
-                            <br> Clínica AXXIS.
-                            <br> Telf.: 02 230 8001.
-                            <br> 
-                            <br> Contacto Familiar:
-                            <br> Marina Asipuela (Mamá).
-                            <br> Telf.: +593 99 362 2074.
-                        </p>
+                        {{#each enlistar}}
+                        <div>
+                            <p>{{nombre}}</p>
+                        </div>
+                        <div>
+                            <p>{{familiar}}</p>
+                        </div>
+                        <div>
+                            <p>{{telefono}}</p>
+                        </div>
+                        <div>
+                            <p>{{celular}}</p>
+                        </div>
+                        <div>
+                            <button><a href="/contactos/lista/{{id}}">Ver todos los contactos.</a></button>
+                        </div>
+                        {{else}}
+                        <div>
+                            <p>Usted no tiene registrad ningun contacto de Emergencia.</p>
+                            <a href="/contactos/agregar/{{user.id}}">¿Desea registrar?</a>
+                        </div>
+                        {{/each}}
                     </div>
                 </div>
             </div>

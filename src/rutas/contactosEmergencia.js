@@ -2,20 +2,22 @@ const express = require('express');
 
 const rutas = express.Router() 
 
-const {mostrar, agregar, lista, listar, traerDatos, editar, eliminar} = require("../controladores/contactosEmergencia");
+const {Ingreso} = require("../lib/auth");
 
-rutas.get ("/agregar/", mostrar)
+const {mostrar, agregar, lista, traerDatos, editar, eliminar} = require("../controladores/contactosEmergencia");
 
-rutas.post ("/agregar/:id", agregar)
+rutas.use (Ingreso)
 
-rutas.get ("/lista/:id", lista)
+rutas.get ("/agregar/:id", Ingreso, mostrar)
 
-rutas.get ("/Inicio/:id", listar)
+rutas.post ("/agregar/:id", Ingreso, agregar)
 
-rutas.get ("/editar/:id", traerDatos)
+rutas.get ("/lista/:id", Ingreso, lista)
 
-rutas.post ("/editar/:id", editar)
+rutas.get ("/editar/:id", Ingreso, traerDatos)
 
-rutas.get ("/eliminar/:id", eliminar)
+rutas.post ("/editar/:id", Ingreso, editar)
+
+rutas.get ("/eliminar/:id", Ingreso, eliminar)
 
 module.exports = rutas

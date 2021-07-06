@@ -7,7 +7,7 @@ const contactosEmergencia = (sequelize, type) => {
         },
 
         nombre: type.STRING,
-        familliar: type.STRING,
+        familiar: type.STRING,
         telefono: type.INTEGER,
         celular: type.INTEGER,
         createdAt:{
@@ -17,7 +17,7 @@ const contactosEmergencia = (sequelize, type) => {
         },
         updatedAt:{
             type: 'TIMESTAMP',
-            defaultValue: type.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
+            defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         }
     })

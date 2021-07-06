@@ -1,27 +1,28 @@
-<form action="/contactos/editar" method="POST">
+{{#each enlistar}}
+<form action="/contactos/editar/{{id}}" method="POST">
     <div>
         <label>
             Nombre:
         </label>
-        <input type="text" name="nombre" id="nombre" checked>
+        <input type="text" name="nombre" id="nombre" value="{{nombre}}">
     </div>
     <div>
         <label>
         Familiar:
         </label>
-        <input type="text" name="familiar" id="familiar" checked>
+        <input type="text" name="familiar" id="familiar" value="{{familiar}}">
     </div>
     <div>
         <label>
         Teléfono:
         </label>
-        <input type="number" name="telefono" id="telefono">
+        <input type="number" name="telefono" id="telefono" value="{{telefono}}">
     </div>
     <div>
         <label>
         Celular:
         </label>
-        <input type="number" name="celular" id="celular" checked>
+        <input type="number" name="celular" id="celular" value="{{celular}}">
     </div>
     <div>
         <button type="submit" id="btn-agregar">
@@ -29,3 +30,4 @@
         </button>
     </div>
 </form>
+{{/each}}

@@ -5,8 +5,10 @@ const router = express.Router();
 
 const {Ingreso} = require ("../lib/auth");
 
-const {principal} = require ("../controladores/user");
+const {principal, listar} = require ("../controladores/user");
 
-router.get("/Inicio", Ingreso, principal);
+router.use(Ingreso)
+
+router.get("/Inicio/", Ingreso, listar);
 
 module.exports = router;

@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize')
-const usuarioModelo = require('./Modelos/user')
-const medicacionUsuario = require('./Modelos/medicacion')
-const ataques = require('./Modelos/ataquesEpilepticos')
-const medicos = require('./Modelos/medico')
-const contactosEmergencia = require('./Modelos/contactosEmergencia')
+const usuarioModelo = require('../Modelos/user')
+const medicacionUsuario = require('../Modelos/medicacion')
+const ataques = require('../Modelos/ataquesEpilepticos')
+const medicos = require('../Modelos/medico')
+const contactosEmergencia = require('../Modelos/contactosEmergencia')
 
 
 const sequelize = new Sequelize(

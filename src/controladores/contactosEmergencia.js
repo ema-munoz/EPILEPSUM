@@ -1,9 +1,10 @@
 const contactosEmergencia = {}
 
-const baseDatos = require("../basededatos");
+const baseDatosSQL = require("../ConfiguracionBaseDatos/basededatos.sql");
+const baseDatosORM = require("../ConfiguracionBaseDatos/basededatos.orm");
 
 contactosEmergencia.mostrar = (req, res) => {
-    res.render("/ContactosEmergencias/contatosAgregar");
+    res.render("ContactosEmergencias/contatosAgregar");
 }
 
 contactosEmergencia.agregar = async (req, res) => {
@@ -16,26 +17,21 @@ contactosEmergencia.agregar = async (req, res) => {
         celular,
         usuarioId: contactosEmergenciaId
     }
-    await baseDatos.contactosDeEmergencia.create(nuevoAgregamiento)
+    await baseDatosORM.contactosDeEmergencia.create(nuevoAgregamiento)
     req.flash ("success", "Datos Guardados...")
-    res.redirect("/contactos/lista/", contactosEmergenciaId);    
+    res.redirect("/contactos/lista/" + contactosEmergenciaId);    
 }
 
 contactosEmergencia.lista = async (req, res) => {
-    const enlistar = await baseDatos.contactosDeEmergencia.findAll()
-    res.render("/ContactosEmergencias/contactosLista", {enlistar});
-}
-
-contactosEmergencia.listar = async (req, res) => {
     const contactosEmergenciaId = req.params.id;
-    const enlistar = await baseDatos.contactosDeEmergencia.findOne({where: {usuarioId: contactosEmergenciaId}})
-    res.render("Página_Principal", {enlistar});
+    const enlistar = await baseDatosSQL.query("SELECT * FROM contactosEmergencia WHERE usuarioId = ?",[contactosEmergenciaId])
+    res.render("ContactosEmergencias/contactosLista", {enlistar});
 }
 
 contactosEmergencia.traerDatos = async (req, res) => {
     const contactosEmergenciaId = req.params.id;
-    const enlistar = await baseDatos.contactosDeEmergencia.findOne({where: {usuarioId: contactosEmergenciaId}})
-    res.render("/ContactosEmergencias/contactosEditar", {enlistar});
+    const enlistar = await baseDatosSQL.query("SELECT * FROM contactosEmergencia WHERE id = ?",[contactosEmergenciaId])
+    res.render("ContactosEmergencias/contactosEditar", {enlistar});
 }
 
 contactosEmergencia.editar = async (req, res) => {
@@ -47,7 +43,7 @@ contactosEmergencia.editar = async (req, res) => {
         telefono, 
         celular
     }
-    await baseDatos.contactosDeEmergencia.findOne({where: {usuarioId: contactosEmergenciaId}})
+    await baseDatosORM.contactosDeEmergencia.findOne({where: {usuarioId: contactosEmergenciaId}})
     .then(contactos => {
         contactos.update(actualizacion)
     })
@@ -57,7 +53,7 @@ contactosEmergencia.editar = async (req, res) => {
 
 contactosEmergencia.eliminar = async (req, res) => {
     const contactosEmergenciaId = req.params.id;
-    await baseDatos.contactosDeEmergencia.destroy({where: {usuarioId: contactosEmergenciaId}})
+    await baseDatosORM.contactosDeEmergencia.destroy({where: {usuarioId: contactosEmergenciaId}})
     res.render("/ContactosEmergencias/contactosLista");
 }
 

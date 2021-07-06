@@ -1,4 +1,5 @@
 <form action="/contactos/lista/{{user.id}}" method="GET"></form> 
+{{#each enlistar}}
 <div>
     <div class="row">
         <div class="card-body">
@@ -9,7 +10,7 @@
             </div>
             <div>
                 <h2>
-                    Nombre:
+                    Nombre: {{nombre}}
                 </h2>
                 <h2>
 
@@ -17,7 +18,7 @@
             </div>
             <div>
                 <h2>
-                    Parentesco:
+                    Parentesco: {{familiar}}
                 </h2>
                 <h2>
 
@@ -25,7 +26,7 @@
             </div>
             <div>
                 <h2>
-                    Telefono:
+                    Teléfono: {{telefono}}
                 </h2>
                 <h2>
 
@@ -33,7 +34,7 @@
             </div>
             <div>
                 <h2>
-                    Celular:
+                    Celular: {{celular}}
                 </h2>
                 <h2>
 
@@ -41,14 +42,15 @@
             </div>
             <div>
                 <button>
-                    <a href="">Editar</a>
+                    <a href="/contactos/editar/{{id}}">Editar</a>
                 </button>
             </div>
             <div>
                 <button>
-                    <a href="">Eliminar</a>
+                    <a href="/contactos/eliminar/{{id}}">Eliminar</a>
                 </button>
             </div>
         </div>
     </div>
 </div>
+{{/each}}
