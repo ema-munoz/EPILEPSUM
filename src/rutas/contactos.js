@@ -9,6 +9,6 @@ const {contactos} = require ("../controladores/Contactos");
 
 router.use(Ingreso)
 
-router.get("/Contactos", Ingreso, contactos);
+router.get("/Contacto", Ingreso, contactos);
 
 module.exports = router;

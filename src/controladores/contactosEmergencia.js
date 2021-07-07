@@ -36,6 +36,7 @@ contactosEmergencia.traerDatos = async (req, res) => {
 
 contactosEmergencia.editar = async (req, res) => {
     const contactosEmergenciaId = req.params.id;
+    const id = req.user.id
     const {nombre, familiar, telefono, celular} = req.body
     const actualizacion = {
         nombre, 
@@ -43,18 +44,18 @@ contactosEmergencia.editar = async (req, res) => {
         telefono, 
         celular
     }
-    await baseDatosORM.contactosDeEmergencia.findOne({where: {usuarioId: contactosEmergenciaId}})
+    await baseDatosORM.contactosDeEmergencia.findOne({where: {id: contactosEmergenciaId}})
     .then(contactos => {
         contactos.update(actualizacion)
-    })
-    req.flash ("success", "Datos Actulizados...")
-    res.redirect("/contactos/lista/", contactosEmergenciaId);    
+        req.flash ("success", "Datos Actulizados.")
+        res.redirect("/contactos/lista/" + id);
+    })    
 }
 
 contactosEmergencia.eliminar = async (req, res) => {
     const contactosEmergenciaId = req.params.id;
     await baseDatosORM.contactosDeEmergencia.destroy({where: {usuarioId: contactosEmergenciaId}})
-    res.render("/ContactosEmergencias/contactosLista");
+    res.render("ContactosEmergencias/contactosLista");
 }
 
 module.exports = contactosEmergencia

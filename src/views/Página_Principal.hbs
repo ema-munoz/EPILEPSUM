@@ -193,9 +193,12 @@
                         <div>
                             <button><a href="/contactos/lista/{{id}}">Ver todos los contactos.</a></button>
                         </div>
+                        <div>
+                            <a href="/contactos/agregar/{{id}}"><img src="/img/plus.png"></a>
+                        </div>
                         {{else}}
                         <div>
-                            <p>Usted no tiene registrad ningun contacto de Emergencia.</p>
+                            <p>Usted no tiene registrado ningún contacto de Emergencia.</p>
                             <a href="/contactos/agregar/{{user.id}}">¿Desea registrar?</a>
                         </div>
                         {{/each}}

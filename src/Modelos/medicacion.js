@@ -6,9 +6,10 @@ const medicacion =(sequelize, type)=>{
             autoIncrement: true,
         },
         nombre: type.STRING,
-        dias: type.STRING,
+        dosis: type.INTEGER,
         hora: type.STRING,
-        medicamento: type.INTEGER
+        fechaInicio: type.STRING,
+        fechaFinal: type.STRING
     })
 }
 

@@ -61,6 +61,8 @@ app.use (require ("./rutas/index"));
 app.use (require ("./rutas/auth"));
 app.use (require ("./rutas/user"));
 app.use (require ("./rutas/control"));
+app.use (require ("./rutas/contactos"));
 app.use ("/contactos", require ("./rutas/contactosEmergencia"));
+app.use ("/medicamentos", require ("./rutas/medicamentos") )
 
 module.exports = app;

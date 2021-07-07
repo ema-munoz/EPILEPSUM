@@ -1,0 +1,41 @@
+{{#each enlistar}}
+<form action="/medicamentos/editar/{{id}}" method="POST">
+    <div>
+        <div>
+            <label>
+                Nombre de la Medicación:
+            </label>
+            <input type="text" name="nombre" id="nombre" value="{{nombre}}">
+        </div>
+        <div>
+            <label>
+                Dosis al Día:
+            </label>
+            <input type="number" name="dosis" id="dosis" value="{{dosis}}">
+        </div>
+        <div>
+            <label>
+                Horario de la dosis:
+            </label>
+            <input type="text" name="hora" id="hora" value="{{hora}}">
+        </div>
+        <div>
+            <label>
+                Fecha de inicio:
+            </label>
+            <input type="date" name="fechaInicio" id="fechaInicio" value="{{fechaInicio}}">
+        </div>
+        <div>
+            <label>
+                Fecha de Terminación:
+            </label>
+            <input type="date" name="fechaFinal" id="fechaFinal" value="{{fechaFinal}}">
+        </div>
+        <div>
+            <button type="submit" id="btn-agregar">
+                Actualizar
+            </button>
+        </div>
+    </div>
+</form>
+{{/each}}

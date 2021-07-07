@@ -1,0 +1,49 @@
+<form action="/medicamentos/lista/{{user.id}}" method="GET"></form>
+{{#each enlistar}}
+<div>
+    <div class="row">
+        <div class="card-body">
+            <div>
+                <h3>
+                    Mi Control:
+                </h3>
+            </div>
+            <div>
+                <h4>
+                    Nombre de la Medicación: {{nombre}}
+                </h4>
+            </div>
+            <div>
+                <h4>
+                    Dosis al Día: {{dosis}}
+                </h4>
+            </div>
+            <div>
+                <h4>
+                    Horario de la Dosis: {{hora}}
+                </h4>
+            </div>
+            <div>
+                <h4>
+                    Fecha de inicio: {{fechaInicio}}
+                </h4>
+            </div>
+            <div>
+                <h4>
+                    Fecha de Terminación: {{fechaFinal}}
+                </h4>
+            </div>
+            <div>
+                <button>
+                    <a href="/medicamentos/editar/{{id}}">Editar</a>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <a href="/medicamentos/eliminar/{{id}}">Eliminar</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

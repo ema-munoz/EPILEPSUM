@@ -1,0 +1,37 @@
+<form action="/medicamentos/agregar/{{user.id}}" method="POST">
+    <div>
+        <label>
+            Nombre de la Medicación:
+        </label>
+        <input type="text" name="nombre" id="nombre" checked>
+    </div>
+    <div>
+        <label>
+            Dosis al Día:
+        </label>
+        <input type="number" name="dosis" id="dosis" checked>
+    </div>
+    <div>
+        <label>
+            Horario de la dosis:
+        </label>
+        <input type="text" name="hora" id="hora" checked>
+    </div>
+    <div>
+        <label>
+            Fecha de inicio:
+        </label>
+        <input type="date" name="fechaInicio" id="fechaInicio" checked>
+    </div>
+    <div>
+        <label>
+            Fecha de Terminación:
+        </label>
+        <input type="date" name="fechaFinal" id="fechaFinal">
+    </div>
+    <div>
+        <button type="submit" id="btn-agregar">
+            Agregar
+        </button>
+    </div>
+</form>

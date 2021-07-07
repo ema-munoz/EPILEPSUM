@@ -8,10 +8,11 @@
 
 <body onload= "startTime()">
 
-    <form action="/Control"></form>
+    <form action="/Control/{{user.id}}"></form>
     <div class=container></div>
 
     <!--Aquí comienza el calendario-->
+
     <div class="calendar">
         <div class="calendar__info">
             <div class="calendar__prev" id="prev-month">&#9664;</div>
@@ -30,6 +31,7 @@
             <div class="calendar__day calendar__item">Sun</div>
         </div>
 
+
         <div class="calendar__dates" id="dates"></div>
     </div>
     <!--Aquí comienza el calendario-->
@@ -42,6 +44,8 @@
         </div>
     </div>
     <!--Aquí termina el reloj-->
+
+    <a href="/medicamentos/agregar/{{user.id}}">¿Desea registrar?</a>
 
     <script src="/js/Control.js"></script>
     </body>

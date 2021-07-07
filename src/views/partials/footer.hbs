@@ -1,28 +1,20 @@
-<footer class="navbar navbar-expand-lg navbar-light bg-light">
-  {{#if user}}
-  <img id="logo" src="/img/logo_epilepsum.jpg"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto-center">
-      <li class="nav-item active">
-        <a class="nav-link" href="/Inicio"> Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Control">Mi Control</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Contactos">Contactos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Inicio#Conocimientos">¿Qué es la Epilepsia?</a>
-      </li>
-      <li class="close">
-        <a href="/logout" id="Close" class="btn btn-primary" type="reset" value="Reset"> Cerrar Sesión </a>
-      </li>
-    </ul>
+{{#if user}}
+<footer class="pb-3 pt-3" class="footer2">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <a href="Información_de_la_Página.html">Contactos</a>
+      </div>
+      <div class="col-md-3">
+        <a href="Información_de_la_Página.html">Información de la página</a>
+      </div>
+      <div class="col-md-3">
+        <a href="Información_de_la_Página.html">Dirrección</a>
+      </div>
+      <div class="col-md-3">
+        <a href="Información_de_la_Página.html">Referencias Legales</a>
+      </div>
+    </div>
   </div>
-  {{/if}}
-</nav>
+</footer>
+{{/if}}

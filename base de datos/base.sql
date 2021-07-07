@@ -33,9 +33,10 @@ create table medicaciones
 (
     id int (11) primary key not null,
     nombre varchar (50) not null,
-    dias varchar (50) not null,
-    hora int (10) not null,
-    medicamento int (2) not null,
+    dosis integer (10) not null,
+    hora varchar (50) not null,
+    fechaInicio date not null,
+    fechaFinal date not null,
     registro timestamp not null default current_timestamp
 );
 
