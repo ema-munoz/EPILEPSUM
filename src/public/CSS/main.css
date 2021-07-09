@@ -1,0 +1,15 @@
+input{
+    text-align: left; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+button{
+    background-color: rgb(220, 20, 170); 
+    text-align: center; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 20px;
+}

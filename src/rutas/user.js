@@ -9,6 +9,6 @@ const {principal, listar} = require ("../controladores/user");
 
 router.use(Ingreso)
 
-router.get("/Inicio/", Ingreso, listar);
+router.get("/Inicio", Ingreso, listar);
 
 module.exports = router;

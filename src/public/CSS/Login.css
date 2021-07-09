@@ -1,4 +1,104 @@
-* {
+
+body{
+    background: url(/img/Fondo.jpg) repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.formulario{
+    width: 50%;
+    position: absolute;
+    top: 220px;
+    left: 350px;
+    background:rgba(27, 144, 240, 0.781);
+    gap: 20px;
+}
+
+.img {
+    max-width: 150px;
+}
+
+#img{
+    position: absolute;
+    top: -100px ;
+    left: 320px;
+}
+
+#h1{
+    position: absolute;
+    top: 50px ;
+    left: 275px;
+    text-align: left; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#inputNombre{
+    position: absolute;
+    top: 125px ;
+    left: 220px;
+}
+
+#inputPass{
+    position: absolute;
+    top: 175px ;
+    left: 220px;
+}
+
+#nombreIntxt{
+    width: 350px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#passIntxt{
+    width: 350px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#boton{
+    position: absolute;
+    top: 225px ;
+    left: 300px;
+}
+
+#boton-login{
+    width: 200px;
+    font-size: 20px;
+    border-top: 2px solid crimson;
+    border-bottom: 2px solid crimson;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -6,30 +106,17 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0cm;
-    padding: 0%;
-    background: url(/img/Fondo.jpg) repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
-}
 
-.h1{
-    max-width: 150px;
-    margin: 135px;
-    text-align: left; 
-    font-style: italic; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+#h1{
+    
 }
 
 .contenedor-form .img{
     max-width: 150px;
     margin: 135px;
     border-radius: 50px;
-    position: absolute;
-    top: -65% ;
-    left: calc (50% - 50px);
+    
 }
 
 .contenedor-form {
@@ -40,7 +127,7 @@ body{
     border-radius: 5px;
     color:  black;
     position: relative;
-    /*padding: 40px*/
+    /*padding: 40px
 }
 
 .contenedor-form .toggle {
@@ -59,8 +146,7 @@ body{
 }
 
 .contenedor-form .toggle:hover {
-    border-top: 2px solid crimson;
-    border-bottom: 2px solid crimson;
+    
 }
 
 .contenedor-form .toggle span {
@@ -86,7 +172,7 @@ body{
     background:whitesmoke;
     color:  black;
     border: none;
-    border-radius: 2px;
+    border-radius: 20px;
     border-bottom: 4px solid coral;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
@@ -144,4 +230,4 @@ body{
 
 .contenedor-form .formulario:nth-child(2) {
     display: block;
-}
+}*/

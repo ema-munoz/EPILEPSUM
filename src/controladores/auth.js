@@ -7,7 +7,7 @@ auth.vista = (req, res)=>{
 }
 
 auth.registro = passport.authenticate ("local.signup", {
-    successRedirect: "/Inicio/",
+    successRedirect: "/Inicio",
     failureRedirect: "/Registro",
     failureFlash: true
 
@@ -18,7 +18,7 @@ auth.vistaLogin = (req, res)=>{
 }
 
 auth.login = passport.authenticate ("local.signin", {
-    successRedirect: "/Inicio/",
+    successRedirect: "/Inicio",
     failureRedirect: "/Login",
     failureFlash: true
 })
